@@ -34,6 +34,9 @@ Variables
     --clr-grey-10: hsl(210, 36%, 96%);
     --clr-white: #fff;
     --ff-primary: "Lato", sans-serif;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s linear;
 }
 
 /*
@@ -63,13 +66,48 @@ Navbar styles
 ===============
 */
 
-.navbar{
+.navbar {
     position: fixed;
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 #nav-logo {
     max-width: 8rem;
+    cursor: pointer;
 }
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#nav-toggle:hover {
+  transform: scale(1.2);
+}
+
 
 .nav-links {
     display: none
@@ -89,5 +127,4 @@ Hero styles
 .hero {
     min-height: 200vh;
     background-color: salmon;
-    border: 1px solid red;
 }

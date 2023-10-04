@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            position: fixed;
+            border: 1px solid red;
+        }
+
+        .hero {
+            min-height: 200vh;
+            background-color: salmon;
+        }
+
+        .nav-center{
+            border: 1px solid blue;
+        }
+
+        #home {
+            border: 1px solid purple;
+        }
+
+        #nav-logo {
+            max-width: 8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header id="home">
+        <!-- start of navbar -->
+        <nav class="navbar">
+            <!-- nav center to limit max width -->
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="./logo.png" id="nav-logo" alt="" />
+                    <button type="button" class="nav-toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- end of header -->
+            </div>
+            <!-- end of nav center -->
+        </nav>
+    </header>
+    <!-- end of header -->
+
+    <!-- hero -->
+    <div class="hero">
+    </div>
+</body>
+</html>
