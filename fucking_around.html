@@ -10,31 +10,15 @@
       href="./fontawesome-free-6.4.2-web/css/all.min.css"
     />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar{
-            position: fixed;
-            border: 1px solid red;
+        #outer {
+            background-color: red;
+            height: 10rem;
         }
 
-        .hero {
-            min-height: 200vh;
-            background-color: salmon;
-        }
-
-        .nav-center{
-            border: 1px solid blue;
-        }
-
-        #home {
-            border: 1px solid purple;
-        }
-
-        #nav-logo {
-            max-width: 8rem;
+        #inner {
+            background-color: blue;
+            height: 5rem;
+            padding: 3rem;
         }
 
     </style>
@@ -42,21 +26,9 @@
 <body>
     <!-- header -->
     <header id="home">
-        <!-- start of navbar -->
-        <nav class="navbar">
-            <!-- nav center to limit max width -->
-            <div class="nav-center">
-                <!-- nav header -->
-                <div class="nav-header">
-                    <img src="./logo.png" id="nav-logo" alt="" />
-                    <button type="button" class="nav-toggle" id="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <!-- end of header -->
-            </div>
-            <!-- end of nav center -->
-        </nav>
+        <div id="outer">
+            <div id="inner"></div>
+        </div>
     </header>
     <!-- end of header -->
 
